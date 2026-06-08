@@ -1,76 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WhatsApp Support</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WhatsApp Support</title>
 
-  <style>
-    body{
-      margin:0;
-      padding:0;
-      font-family:Arial, sans-serif;
-      background:#111;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      height:100vh;
-      color:white;
-    }
+<script>
+// Sirf yahan number change karna hoga
+const WHATSAPP_NUMBER = "918543909791";
 
-    .box{
-      background:#1e1e1e;
-      padding:30px;
-      border-radius:20px;
-      width:320px;
-      text-align:center;
-      box-shadow:0 0 20px rgba(0,0,0,0.5);
-    }
+window.onload = function () {
+  window.location.href =
+    "https://wa.me/" + WHATSAPP_NUMBER + "?text=Hello%20Support";
+};
+</script>
 
-    h1{
-      margin-bottom:25px;
-      font-size:38px;
-    }
-
-    a{
-      display:block;
-      text-decoration:none;
-      background:#25D366;
-      color:white;
-      padding:15px;
-      margin:15px 0;
-      border-radius:12px;
-      font-size:20px;
-      font-weight:bold;
-      transition:0.3s;
-    }
-
-    a:hover{
-      background:#1ebe5d;
-      transform:scale(1.05);
-    }
-  </style>
+<style>
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#25D366;
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  text-align:center;
+}
+.box{
+  padding:20px;
+}
+a{
+  color:white;
+  font-size:20px;
+}
+</style>
 </head>
-
 <body>
-
 <div class="box">
-
-<h1>WhatsApp Support</h1>
-
-<a href="https://wa.me/918543909791?text=Deposit%20Request">
-💰 Deposit Withdrawal Support
-</a>
-
-<a href="https://wa.me/573181233188?text=I%20need%20help">
-💬 Customer Support
-</a>
-
-<a href="https://wa.me/573153250749?text=I%20want%20new%20ID">
-⚡ Instant ID
-</a>
-
+  <h1>WhatsApp Support</h1>
+  <p>Redirecting to WhatsApp...</p>
+  <a href="#" id="waLink">Open WhatsApp</a>
 </div>
 
+<script>
+document.getElementById("waLink").href =
+  "https://wa.me/" + WHATSAPP_NUMBER;
+</script>
 </body>
 </html>
